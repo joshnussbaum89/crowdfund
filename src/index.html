@@ -77,19 +77,38 @@
         <div class="product-buttons">
           <button class="product-buttons__back">Back this project</button>
 
-          <!-- TODO: display extra "bookmark" tag on desktop -->
-          <!-- Draw it, it simply changes colors when .active class is applied (do this with JS) -->
-          <svg
-            width="56"
-            height="56"
-            class="product-buttons__bookmark"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
-              <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
-            </g>
-          </svg>
+          <!-- TODO: change color when .active class is applied (do this with JS) -->
+          <div class="product-buttons__bookmark">
+            <svg
+              width="56"
+              height="56"
+              class="product-buttons__icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+                <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+              </g>
+            </svg>
+            <div class="product-buttons__label">Bookmark</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: target IDs to update numbers (JS) -->
+      <!-- TODO: build progress bar and desktop styles -->
+      <section id="backers" class="backers">
+        <div class="backers__data">
+          <span id="amount-backed" class="backers__num">$89,914</span>
+          <span class="backers__note">of $100,000 backed</span>
+        </div>
+        <div class="backers__data">
+          <span id="total-backers" class="backers__num">5,007</span>
+          <span class="backers__note">total backers</span>
+        </div>
+        <div class="backers__data">
+          <span id="days-left" class="backers__num">56</span>
+          <span class="backers__note">days left</span>
         </div>
       </section>
     </main>
