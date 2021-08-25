@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root {
+  --moderateCyan: #3cb4ac; /* button */
+  --darkCyan: #147b74; /* hover */
+  --black: #000;
+  --darkGrey: #7a7a7a;
+  --lightGrey: #f7f7f7;
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--lightGrey);
+}
+
+#hero {
+  color: white;
+  background: url('../images/image-hero-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 55vh;
+  width: 100vw;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1rem;
+  margin: 0 1rem;
+}
+
+#nav h1 {
+  margin: 0;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+/* Product card */
+.product {
+  background: white;
+  max-height: 400px;
+  max-width: 600px;
+  padding: 2rem 2rem 3rem;
+  margin: -4rem 2rem;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+
+.product-logo {
+  margin: -4rem 0 2rem;
+}
+
+.product h2 {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.product p {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  color: var(--darkGrey);
+}
+
+.product-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-buttons__back {
+  background: var(--moderateCyan);
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+/* TODO: display NONE - 'bookmark' tag on mobile */
+
+@media (min-width: 768px) {
+  #hero {
+    background: url('../images/image-hero-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #nav {
+    margin: 0 4rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .desktop-nav li {
+    margin: 0 1rem;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: white;
+  }
+}
