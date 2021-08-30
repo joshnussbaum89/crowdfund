@@ -60,6 +60,12 @@ body {
 
 .product,
 .backers {
+  text-align: center;
+}
+
+.product,
+.backers,
+.about {
   background: white;
   max-width: 600px;
   width: 75%;
@@ -67,7 +73,10 @@ body {
   margin: 0 0 2rem;
   border: 1px solid var(--outlineGrey);
   border-radius: 0.6rem;
-  text-align: center;
+}
+
+.about p {
+  color: var(--darkGrey);
 }
 
 .product-logo {
@@ -178,7 +187,8 @@ progress::-moz-progress-value {
   }
 
   .product,
-  .backers {
+  .backers,
+  .about {
     width: 100%;
   }
 
