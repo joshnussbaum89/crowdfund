@@ -61,7 +61,6 @@ body {
 .product,
 .backers {
   background: white;
-  max-height: 400px;
   max-width: 600px;
   width: 75%;
   padding: 2rem 1.5rem 3rem;
@@ -105,7 +104,7 @@ body {
   display: none;
 }
 
-/* TODO: build progress bar and desktop styles */
+/* Backers data & progress bar */
 .backers__data {
   display: flex;
   flex-direction: column;
@@ -125,9 +124,45 @@ body {
 
 .backers__note {
   color: var(--darkGrey);
-  width: 200px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.backers__data:nth-child(-n + 2) {
+  margin: 0 auto 2rem auto;
   border-bottom: 1px solid var(--outlineGrey);
+  width: 100px;
+}
+
+/* Progress bar */
+progress {
+  background-color: var(--lightGrey);
+  height: 1rem;
+  width: 100%;
+  border-radius: 50px;
+}
+progress::-webkit-progress-bar {
+  background-color: var(--lightGrey);
+  height: 1rem;
+  width: 100%;
+  border-radius: 50px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--moderateCyan);
+  height: 1rem;
+  width: 100%;
+  border-radius: 50px;
+}
+progress::-moz-progress-bar {
+  background-color: var(--lightGrey);
+  height: 1rem;
+  width: 100%;
+  border-radius: 50px;
+}
+progress::-moz-progress-value {
+  background-color: var(--moderateCyan);
+  height: 1rem;
+  width: 100%;
+  border-radius: 50px;
 }
 
 /* Tablet screens */
@@ -144,7 +179,25 @@ body {
 
   .product,
   .backers {
-    width: 90%;
+    width: 100%;
+  }
+
+  .backers__container {
+    display: flex;
+    justify-content: flex-start;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .backers__data:nth-child(-n + 2) {
+    margin: 2rem 1.5rem;
+    padding-right: 5rem;
+    border-bottom: none;
+    border-right: 1px solid var(--outlineGrey);
+  }
+
+  .backers__data:last-child {
+    margin: 2rem 1.5rem;
   }
 
   .mobile-nav {

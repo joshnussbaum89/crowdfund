@@ -96,21 +96,36 @@
       </section>
 
       <!-- TODO: target IDs to update numbers (JS) -->
-      <!-- TODO: build progress bar and desktop styles -->
       <section id="backers" class="backers">
-        <div class="backers__data">
-          <span id="amount-backed" class="backers__num">$89,914</span>
-          <span class="backers__note">of $100,000 backed</span>
+        <div class="backers__container">
+          <div class="backers__data">
+            <span id="amount-backed" class="backers__num">$89,914</span>
+            <span class="backers__note">of $100,000 backed</span>
+          </div>
+          <div class="backers__data">
+            <span id="total-backers" class="backers__num">5,007</span>
+            <span class="backers__note">total backers</span>
+          </div>
+          <div class="backers__data">
+            <span id="days-left" class="backers__num">56</span>
+            <span class="backers__note">days left</span>
+          </div>
         </div>
-        <div class="backers__data">
-          <span id="total-backers" class="backers__num">5,007</span>
-          <span class="backers__note">total backers</span>
-        </div>
-        <div class="backers__data">
-          <span id="days-left" class="backers__num">56</span>
-          <span class="backers__note">days left</span>
+        <div>
+          <progress id="progress-bar" value="75" max="100">75%</progress>
         </div>
       </section>
+
+      <!-- About this project container
+            About this project heading
+            paragraph
+            paragraph
+              3 containers containing pledge info
+                *** Disable pledge container if none (0) are left ***
+                -> Bamboo Stand
+                -> Black Edition Stand
+                -> Magogany Special Edition (disabled - mockup testing only)
+      -->
     </main>
     <script src="app.js" type="text/javascript"></script>
   </body>
